@@ -27,12 +27,22 @@ public class XPeSetupWizard extends Application {
     public static final boolean DEBUG = false;
 
     public static final String ACCOUNT_TYPE_GOOGLE = "com.google";
+ public static final String ACTION_SETUP_WIFI = "com.android.net.wifi.SETUP_WIFI_NETWORK";
 
     public static final String EXTRA_FIRST_RUN = "firstRun";
     public static final String EXTRA_ALLOW_SKIP = "allowSkip";
 
+public static final String EXTRA_SHOW_SKIP = "extra_prefs_show_button_bar";
+
+    public static final String EXTRA_AUTO_FINISH = "wifi_auto_finish_on_connect";
+    public static final String EXTRA_SHOW_BUTTON_BAR = "extra_prefs_show_button_bar";
+    public static final String EXTRA_PREF_BACK_TEXT = "extra_prefs_set_back_text";
+    public static final String EXTRA_ONLY_ACCESS_POINTS = "only_access_points";
+
     public static final String GCM_PREFERENCES = "com.klozz.xperience.setupwizard.gcm";
     public static final String SETTINGS_PREFERENCES = "com.klozz.xperience.setupwizard_preferences";
+
+	public static final int REQUEST_CODE_SETUP_WIFI = 0;
 
     private StatusBarManager mStatusBarManager;
 
